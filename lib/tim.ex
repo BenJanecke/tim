@@ -1,13 +1,18 @@
 defmodule Tim do
-  import Plug.Conn 
-  
-  def init(options) do 
-    options
-  end
+  @moduledoc """
+  Documentation for Tim.
+  """
 
-  def call(conn, _opts) do 
-    conn
-    |> put_resp_content_type("text/plain")
-    |> send_resp(200, "Die")
+  @doc """
+  Hello world.
+
+  ## Examples
+
+      iex> Tim.hello
+      :world
+
+  """
+  def hello do
+    :world
   end
 end
